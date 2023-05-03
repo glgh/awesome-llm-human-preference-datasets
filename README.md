@@ -1,5 +1,5 @@
 # Awesome Human Preference Datasets
-A curated list of **Human Preference** datasets for LLM instruction-tuning, RLHF and evaluation.
+A curated list of open source **Human Preference** datasets for LLM instruction-tuning, RLHF and evaluation.
 
 For general NLP datasets and text corpora, check out [this](https://github.com/niderhoff/nlp-datasets) awesome list.
 
