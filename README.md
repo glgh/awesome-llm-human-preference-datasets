@@ -15,7 +15,10 @@ For general NLP datasets and text corpora, check out [this](https://github.com/n
 - Explore sample data [here](https://openaipublic.blob.core.windows.net/summarize-from-feedback/website/index.html#/tldr_comparisons).
 
 [**Anthropic Helpfulness and Harmlessness Dataset (HH-RLHF)**](https://huggingface.co/datasets/Anthropic/hh-rlhf) 
-- Human preference data about helpfulness and harmlessness from [Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback](https://arxiv.org/pdf/2204.05862.pdf) as well as human-generated red teaming data from [Red Teaming Language Models to Reduce Harms](https://arxiv.org/abs/2209.07858).
+- In total 170k human preference comparisons, including human preference data collected for [Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback](https://arxiv.org/pdf/2204.05862.pdf) and human-generated red teaming data from [Red Teaming Language Models to Reduce Harms](https://arxiv.org/abs/2209.07858), divided into 3 sub-datasets:
+    - A **base** dataset using a context-distilled 52B model, with 44k helpfulness comparisons and 42k red-teaming (harmlessness) comparisons.
+    - A **RS** dataset of 52k helpfulness comparisons and 2k red-teaming comparisons using rejection sampling models, where rejection sampling used a preference model trained on the base dataset.
+    - An iterated **online** dataset including data from RLHF models, updated weekly over five weeks, with 22k helpfulness comparisons.
 
 [**OpenAssistant Conversations Dataset (OASST1)**](https://huggingface.co/datasets/OpenAssistant/oasst1)
 - A human-generated, human-annotated assistant-style conversation corpus consisting of 161k messages in 35 languages, annotated with 461k quality ratings, resulting in 10k+ fully annotated conversation trees. 
@@ -30,6 +33,9 @@ For general NLP datasets and text corpora, check out [this](https://github.com/n
 - 60k human answers and 27K ChatGPT answers for around 24K questions.
 - Sibling dataset available for [Chinese](https://huggingface.co/datasets/Hello-SimpleAI/HC3-Chinese).
 
+[**H4 StackExchange Preference Dataset**](https://huggingface.co/datasets/HuggingFaceH4/stack-exchange-preferences)
+- 10 million questions (with >= 2 answers) and answers (scored based on vote count) from Stackoverflow. 
+
 [**ShareGPT.com**](https://sharegpt.com/)
 - 90k (as of April 2023) user-uploaded ChatGPT interactions.
 - ~~To access the data using ShareGPT's API, see documentation [here](https://github.com/domeccleston/sharegpt#rest-api)~~ The ShareGPT API is currently disabled ("due to excess traffic"). 
@@ -43,7 +49,3 @@ For general NLP datasets and text corpora, check out [this](https://github.com/n
 
 [**Databricks Dolly Dataset**](https://huggingface.co/datasets/databricks/databricks-dolly-15k)
 - 15k instruction-following records generated [by Databricks employees](https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm) in categories including brainstorming, classification, closed QA, generation, information extraction, open QA, and summarization.
-
-[**StackExchange Preferences**](https://huggingface.co/datasets/HuggingFaceH4/stack-exchange-preferences)
-- Questions and answers from the [Stack Overflow Data Dump](https://archive.org/details/stackexchange). 
-- Only include questions with >=2 answers.
