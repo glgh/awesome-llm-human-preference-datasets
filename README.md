@@ -33,7 +33,7 @@ For general NLP datasets and text corpora, check out [this](https://github.com/n
 - 60k human answers and 27K ChatGPT answers for around 24K questions.
 - Sibling dataset available for [Chinese](https://huggingface.co/datasets/Hello-SimpleAI/HC3-Chinese).
 
-[**H4 StackExchange Preference Dataset**](https://huggingface.co/datasets/HuggingFaceH4/stack-exchange-preferences)
+[**HuggingFace H4 StackExchange Preference Dataset**](https://huggingface.co/datasets/HuggingFaceH4/stack-exchange-preferences)
 - 10 million questions (with >= 2 answers) and answers (scored based on vote count) from Stackoverflow. 
 
 [**ShareGPT.com**](https://sharegpt.com/)
