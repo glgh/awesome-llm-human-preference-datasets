@@ -49,3 +49,6 @@ For general NLP datasets and text corpora, check out [this](https://github.com/n
 
 [**Databricks Dolly Dataset**](https://huggingface.co/datasets/databricks/databricks-dolly-15k)
 - 15k instruction-following records generated [by Databricks employees](https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm) in categories including brainstorming, classification, closed QA, generation, information extraction, open QA, and summarization.
+
+[**HH_golden**](https://huggingface.co/datasets/Unified-Language-Model-Alignment/Anthropic_HH_Golden)
+- 42k harmless data, same prompts and "rejected" responses as the Harmless dataset in [Anthropic HH datasets](https://huggingface.co/datasets/Anthropic/hh-rlhf), but the responses in the "chosen" responses are re-writtened using GPT4 to yield more harmless answers. The comparison before and after re-written can be found [here](https://huggingface.co/datasets/Unified-Language-Model-Alignment/Anthropic_HH_Golden). Empirically, compared with the original Harmless dataset, training on this dataset improves the harmless metrics for various alignment methods such as RLHF and DPO.
